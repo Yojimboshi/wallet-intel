@@ -1,0 +1,15 @@
+[Unit]
+Description=wallet-intel copy-trade watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/wallet-snipe
+ExecStart=/root/wallet-snipe/intel
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

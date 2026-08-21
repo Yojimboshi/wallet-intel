@@ -1,0 +1,21 @@
+# Local secrets — create these on your machine (not in repo)
+config/local.json
+config/watch.json
+config/execution-wallets.json
+config/collectors.json
+config/*.local.json
+
+# Runtime data
+/data/
+*.jsonl
+
+# Binaries
+*.exe
+/intel
+/intel.exe
+/intel-linux
+
+.env
+.env.*
+
+.DS_Store
